@@ -4,24 +4,26 @@ import { socialLinks } from "./lib/config";
 export default function Page() {
   return (
     <section>
-      <a href={socialLinks.twitter} target="_blank">
+      <div>
         <Image
           src="/profile.png"
           alt="Profile photo"
-          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
+          className="w-40 h-40 rounded-full object-cover object-center bg-gray-100 block lg:mt-5 mt-0 lg:mb- mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale"
           unoptimized
-          width={160}
-          height={160}
+          width={200}
+          height={200}
           priority
+          style={{ objectPosition: '50% 30%' }}
         />
-      </a>
-      <h1 className="mb-8 text-2xl font-medium">Portfolio template!</h1>
+      </div>
+      <h1 className="mb-8 text-2xl font-medium">Howdy!</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS.
+          Welcome to my portfolio.
         </p>
         <p>
+          A bit about myself. I'm currently a DevOps engineer that works at one Australias Big Four Banks. 
+
           Nextfolio has everything you need for a portfolio: MDX blog, SEO, RSS,
           Atom & JSON feeds, analytics, Tweet & YouTube embeds, KaTeX and {""}
           <a
